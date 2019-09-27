@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Baloo';
+	src:url('../fonts/Baloo-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src:url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src:url('../fonts/Roboto-Bold-webfont.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family:'Baloo', cursive;
+}
