@@ -22,7 +22,7 @@
 
 /*Typography & colors*/
 html {
-	font-size:62.5%;
+	font-size:45%;
 }
 body {
 	background-color:#F7FCFF;
@@ -64,9 +64,11 @@ h1, h2, h3 {
 	border-radius:5px;
 	position:absolute;
 	top:-40px;
-	left:calc(50vw - 33px);
+	left:calc(50% - 33px);
 }
-
+h1.titre::before {
+	top:-60px;
+}
 .stitre {
 	font-size:2.6rem;
 }
@@ -105,9 +107,6 @@ button.btn3 {
 	color:#202020;
 }
 
-main {
-}
-
 .separateur-footer {
 	border-radius: 0 0 30px 30px;
 	background-color:#F7FCFF;
@@ -132,22 +131,40 @@ footer a {
 }
 
 /*Layout & spacing*/
+.titre {
+	margin-bottom:3rem;
+	margin-top:13rem;
+}
+h1.titre {
+	margin-bottom:2rem;
+	margin-top:10rem;
+}
+
 p {
 	margin-top:0;
 	margin-bottom:1rem;
 }
 
+section {
+	border:solid 1px darkturquoise; /*dev*/
+	padding: 0 10%;
+}
 .large {
 	display:none;
 }
 
 @media screen and (min-width:768px) {
+	html {
+	font-size:62.5%;
+}
 	.large {
-		display:initial;
+		display:inline-block;
 	}
 	.mobile {
 		display: none;
 	}
+
+
 	.titre, .stitre {
 		text-align:left;
 	}
@@ -158,4 +175,122 @@ p {
 		width:auto;
 		text-align: left;
 	}
+
+	h1 + .stitre {
+		max-width:32rem;
+	}
+
+	.stitre {
+		max-width:67rem;
+	}
+}
+
+@media screen and (min-width:1000px) {
+		section {
+		padding:0 calc(50vw - 470px);
+	}
+}
+
+/* Header */
+header.sticky {
+	background-color:#fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+	position:sticky;
+	top:0;
+	z-index:1;
+}
+header.absolute {
+	background-color:#F7FCFF;
+	position:absolute;
+	top:0;
+	z-index:2;
+	width:100%;
+	min-height:96px;
+}
+header .logo {
+	margin-top:20px
+}
+
+header .inner {
+	align-items: center;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding:10px 20px;
+}
+header p {
+	font-size:14px;
+	line-height:1;
+  text-align: center;
+
+}
+header button {
+  flex-basis:185px;
+	flex-shrink:0;
+	flex-grow:0;
+	font-size:13px;
+	height:30px;
+	margin:0;
+	padding:0 16px;
+		text-align: center;
+
+}
+@media screen and (min-width:450px) {
+	header.absolute {
+		min-height:50px;
+	}
+	
+	#investir {
+		margin-top:40px
+	}
+	
+	header p {
+	 margin-bottom:0;
+	padding-right:20px;
+		text-align: left;
+		
+		
+	}
+}
+@media screen and (min-width:768px) {
+	header .logo {
+		margin-top:0;
+	}
+	#investir {
+		margin-top:0;
+	}
+	header p {
+		font-size:16px;
+	}
+	header button {
+		height:36px;
+	}
+	header.absolute {
+		min-height:80px;
+	}
+	header.absolute .inner {
+	display:flex;
+}
+	header .inner {
+		justify-content:space-between;
+
+		padding:10px 30px;
+	}
+	header p {
+	flex-grow: 1;
+	text-align: right;
+}
+}
+@media screen and (min-width:1100px) {
+		header .inner {
+		padding: 10px  calc(50vw - 540px);
+	}
+}
+/* Section #investir */
+#investir .logo {
+	position:relative;
+	margin:10px auto 50px;
+	max-width:260px;
+	display: block;
+	padding-bottom: 30px;
 }
