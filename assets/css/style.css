@@ -297,7 +297,7 @@ header button {
 }
 
 /* Section atouts*/
-#atouts ul {
+ul.atouts {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 	border-radius:20px;
 	padding:20px;
@@ -305,12 +305,12 @@ header button {
 	margin-bottom:5rem;
 	list-style: none;
 }
-#atouts ul h3 {
+ul.atouts  h3 {
 	font-size:3.6rem;
 	line-height:1;
 	margin:0;
 }
-#atouts li {
+.atouts  li {
 	background-repeat: no-repeat;
 	background-image: url('check.png');
 	background-size:2.8rem;
@@ -320,14 +320,14 @@ header button {
 }
 
 @media screen and (min-width:768px) {
-	#atouts ul {
+	ul.atouts {
 		box-shadow: none;
 		display:flex;
 		flex-wrap:wrap;
 		justify-content: space-between;
 		padding:0;
 	}
-	#atouts li {
+	.atouts  li {
 		background-position-y: 3.2rem;
 		box-sizing: border-box;
     border-top: 2px dotted #b4b4b4;
@@ -336,12 +336,54 @@ header button {
 		margin:0;
 		padding:3rem 0 3rem 3.8rem;
 	}
-	#atouts li:nth-child(2) {
+	.atouts  li:nth-child(2) {
     border-bottom: 2px dotted #b4b4b4;
 		order:2;
 	}
-	#atouts li:nth-child(4) {
+	.atouts  li:nth-child(4) {
     border-bottom: 2px dotted #b4b4b4;
+		order:3
+	}
+  .atouts li strong {
+		font-weight:normal;
+	}
+}
+
+/* section #pourquoi */
+ul.pourquoi {
+	list-style: none;
+	margin:0;
+	padding:10px;
+	padding-left:30%;
+	text-align: right;
+}
+.pourquoi li {
+	margin:0 0 6.4rem;
+	padding:0;
+	
+}
+.pourquoi h3 {
+	font-size:4rem;
+	line-height:1;
+	margin:0 0 1.6rem;
+}
+@media screen and (min-width:768px) {
+	ul.pourquoi {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		padding:0;
+		text-align:left;
+	}
+	.pourquoi  li {
+		box-sizing: border-box;
+		flex-basis:calc(50% - 1.5rem);
+		flex-grow:0;
+	}
+	.pourquoi  li:nth-child(2) {
+		order:2;
+	}
+	.pourquoi  li:nth-child(4) {
 		order:3
 	}
 }
