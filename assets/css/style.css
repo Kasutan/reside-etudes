@@ -71,6 +71,7 @@ h1.titre::before {
 }
 .stitre {
 	font-size:2.6rem;
+	margin-bottom:5rem;
 }
 h1 + .stitre {
 	font-size: 3rem;
@@ -293,4 +294,54 @@ header button {
 	max-width:260px;
 	display: block;
 	padding-bottom: 30px;
+}
+
+/* Section atouts*/
+#atouts ul {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border-radius:20px;
+	padding:20px;
+	padding-right:10px;
+	margin-bottom:5rem;
+	list-style: none;
+}
+#atouts ul h3 {
+	font-size:3.6rem;
+	line-height:1;
+	margin:0;
+}
+#atouts li {
+	background-repeat: no-repeat;
+	background-image: url('check.png');
+	background-size:2.8rem;
+	background-position:left 0.3rem;
+	margin-bottom:2rem;
+	padding-left:4.2rem;
+}
+
+@media screen and (min-width:768px) {
+	#atouts ul {
+		box-shadow: none;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		padding:0;
+	}
+	#atouts li {
+		background-position-y: 3.2rem;
+		box-sizing: border-box;
+    border-top: 2px dotted #b4b4b4;
+		flex-basis:calc(50% - 1.5rem);
+		flex-grow:0;
+		margin:0;
+		padding:3rem 0 3rem 3.8rem;
+	}
+	#atouts li:nth-child(2) {
+    border-bottom: 2px dotted #b4b4b4;
+		order:2;
+	}
+	#atouts li:nth-child(4) {
+    border-bottom: 2px dotted #b4b4b4;
+		order:3
+	}
 }
