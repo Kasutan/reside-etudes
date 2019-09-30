@@ -109,6 +109,13 @@ button.btn3 {
 	color:#202020;
 }
 
+a.ref {
+	color: #ff9400;
+	font-weight:bold;
+	font-size:1.4rem;
+	text-decoration: none;
+}
+
 .separateur-footer {
 	border-radius: 0 0 30px 30px;
 	background-color:#F7FCFF;
@@ -405,10 +412,7 @@ section {
 	width:100%;
 	height:100%;
 }
-.decor-1 img {
-	width:100%;
-	height:1000px;
-}
+
 
 .titre.blanc::before {
 	background-color: #fff;
@@ -425,6 +429,7 @@ section {
 	flex-basis:300px;
 	flex-shrink:0;
 	margin-right:3rem;
+	margin-bottom:3rem;
 	padding:5rem 4rem;
 	text-align:center;
 }
@@ -448,6 +453,52 @@ section {
 }
 @media screen and (min-width:768px) {
 	.decor-1 {
-		top:-20px
+		background-image:url('decor-1-large.png');
+		top:-20px;
+		background-size:auto;
 	}
+	.avantages {
+		flex-wrap: wrap;
+	}
+	.avantage {
+		align-items: center;
+		display:flex;
+		flex-basis:100%;
+		margin-bottom:3rem;
+			margin-right:0;
+	padding:4rem;
+	text-align:left;
+	}
+	.avantage .icone {
+		height:unset;
+		max-width:105px;
+		margin-right:3.5rem;
+	}
+	.avantage h3 {
+		margin:0 0 2.3rem;
+	}
+	
+	.avantage .flex {
+		display: flex;
+		padding:0;
+	}
+	.avantage p {
+		box-sizing: border-box;
+		font-size:1.9rem;
+	}
+	.avantage p:first-of-type {
+	border-bottom :none;
+	border-right : 3px dotted #c1c1c1;
+		flex-basis:300px;
+		flex-shrink: 0;
+		
+	padding-bottom:0;
+	margin-bottom:0;
+		padding-right:4.5rem;
+}
+		.avantage p:last-of-type {
+	margin-bottom:0;
+	
+		padding-left:4.5rem;
+}
 }
