@@ -590,11 +590,25 @@ border-radius: 20px;
 .pourquoi.croissance {
 	padding-left:0;
 	text-align: left;
+	position:relative;
 }
 .pourquoi.croissance li {
 	order:unset;
 }
-
+.illustration-croissance {
+	max-width:155px;
+	width:33%;
+	position:absolute;
+	bottom:-20px;
+	right:0;
+}
+.illustration-croissance.large {
+	max-width:445px;
+	width:33%;
+	position:absolute;
+	bottom:-30px;
+	right:0;
+}
 /*section #residences */
 .decor.decor-2 {
 	background-image: url('decor-2-mobile.png');
