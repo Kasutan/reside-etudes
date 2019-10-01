@@ -135,6 +135,9 @@ footer a {
 }
 
 /*Layout & spacing*/
+main {
+	position:relative;
+}
 .titre {
 	margin-bottom:3rem;
 	margin-top:13rem;
@@ -712,7 +715,7 @@ background-color: #ffffff;
 .separateur-footer {
 	border-radius: 0 0 30px 30px;
 	background-color:#F7FCFF;
-	position:relative;
+	position:absolute;
 	bottom:-30px;
 	height:30px;
 	width:100vw;
@@ -727,7 +730,12 @@ background-color: #ffffff;
 	bottom:0;
 	right:10%;
 }
-
+.illustration-footer {
+	width:100%;
+	position:relative;
+	bottom:-30px;
+	margin-top:-40px;
+}
 /*footer*/
 .notes p {
 	margin-bottom:2rem;
