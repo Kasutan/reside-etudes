@@ -23,6 +23,7 @@
 /*Typography & colors*/
 html {
 	font-size:45%;
+	scroll-behavior: smooth;
 }
 body {
 	background-color: #f6fbff;;
@@ -150,6 +151,9 @@ p {
 section {
 	padding: 0 10%;
 }
+.notes, .colophon {
+	padding:10rem 10%;
+}
 .large {
 	display:none;
 }
@@ -189,6 +193,9 @@ section {
 @media screen and (min-width:1000px) {
 		section {
 		padding:0 calc(50vw - 470px);
+	}
+	.notes, .colophon {
+		padding:10rem calc(50vw - 470px);
 	}
 }
 
@@ -715,4 +722,14 @@ background-color: #ffffff;
 	max-width:783px;
 	bottom:0;
 	right:10%;
+}
+
+/*footer*/
+.notes p {
+	margin-bottom:2rem;
+	position: relative;
+}
+.notes .ancre {
+	position:relative;
+	top:-90px;
 }
