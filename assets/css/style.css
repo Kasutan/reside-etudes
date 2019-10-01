@@ -36,6 +36,7 @@ body {
 
 h1, h2, h3 {
 	font-family:'Baloo', cursive;
+	font-weight:400;
 }
 .titre {
 	font-size:60px;
@@ -328,7 +329,7 @@ ul.atouts  h3 {
 	line-height:1;
 	margin:0;
 }
-.atouts  li {
+.atouts li {
 	background-repeat: no-repeat;
 	background-image: url('check.png');
 	background-size:2.8rem;
@@ -811,4 +812,133 @@ background-color: #ffffff;
 		display: inline-block;
 		margin-right:4rem;
 	}
+}
+
+/* Formulaire */
+.modaal-container {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
+  border-radius: 20px;
+	text-align: center;
+}
+
+.titre-formulaire::before {
+	display: none;
+}
+.titre-formulaire {
+	font-size:3rem;
+	margin-top:0;
+	margin-bottom:2rem;
+	text-align: center;
+}
+.titre-formulaire + p {
+	font-size:1.6rem;
+	margin-bottom:3rem;
+}
+.form-group {
+	display: inline-block;
+	position: relative;
+}
+.form-group:nth-of-type(2n+1) {
+	margin-right:1.4rem;
+}
+.form-group input {
+	border-radius:20px;
+	border:solid 1px lightgrey;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	height: 41px;
+	width: 305px;
+	
+	
+color: #252525;
+
+font-size: 14px;
+font-weight: 700;
+	line-height:1;
+	text-align: center;
+	padding-top:14px;
+	margin-bottom:14px;
+}
+.form-group label {
+	color: #979797;
+	font-size: 13px;
+	font-weight: 700;
+	left:0;
+	line-height:41px;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+.form-group label::after {
+	content:'*';
+	color:#ff9400;
+}
+.form-group.focus label {
+  color: #ff9400;
+  font-size: 11px;
+	line-height:1;
+	top:6px;
+}
+
+.form-flex {
+	align-content: center;
+	display:flex;
+	justify-content: space-between;
+	line-height: 13px;
+	color: #979797;
+	font-size: 11px;
+}
+.optin input {
+position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.optin {
+	padding-left:29px;
+	position:relative;
+}
+.optin .check {
+	border: 1px solid #979797;
+	border-radius:50%;
+	width:20px;
+	height:20px;
+	position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+.optin input:checked ~ .check {
+	background-image: url('check.png');
+	background-size:contain;
+	border-color:#ff9400;
+}
+
+
+input[type="submit"] {
+	background-color:#ff9400;
+	border-radius:20px;
+	border:0;
+	color:#fff;
+	display: block;
+	font-size:16px;
+	font-family: Baloo;
+	font-size: 16px;
+	font-weight: 400;
+	height: 41px;
+	line-height: 32.59px;
+	margin:3rem auto 0;
+	transition: all ease-in-out 0.7s;
+	width:216px;
+	
+}
+
+input[type="submit"].disabled {
+	background-color: #c7c7c7;
+}
+input[type="submit"]:not(.disabled):focus, input[type="submit"]:not(.disabled):hover {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	color:#ff9400;
+	cursor: pointer;
 }

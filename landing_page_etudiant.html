@@ -162,8 +162,8 @@
 						<img src="images/loyer.png" alt="Icone main tenant une maison avec un symbole €" />
 					</div>
 					<h3>Mes loyers<br>sont garantis</h3>
-					<p>nets de charge<sup><a href="#note2" class="ref">(2)</a></sup><br>et d'impots.<sup><a href="#note3"
-								class="ref">(3)</a></sup></p>
+					<p>nets de charge<sup><a href="#note2" class="ref">(2)</a></sup><br>et d'impots.<sup><a
+								href="#note3" class="ref">(3)</a></sup></p>
 				</li>
 				<li>
 					<div class="icone">
@@ -328,8 +328,37 @@
 				class="illustration large" />
 		</div>
 		<div id="formulaire" style="display:none">
-			<p> formulaire </p>
-			<form>
+			<h2 class="titre titre-formulaire">Investir en <span class="accent">Résidence &Eacute;tudiant</span></h2>
+			<p>Un conseiller vous accompagne pour <strong>définir la meilleure stratégie d’investissement.</strong></p>
+			<form id="theForm">
+				<div class="form-group"><label for="firstname">Prénom</label>
+					<input type="text" required id="firstname" name="firstname" />
+				</div>
+				<div class="form-group">
+					<label for="lastname">Nom</label>
+					<input type="text" required id="lastname" name="lastname" />
+				</div>
+				<div class="form-group">
+					<label for="pcode">Code Postal</label>
+					<input type="text" required id="pcode" name="pcode" />
+				</div>
+				<div class="form-group">
+					<label for="city">Ville</label>
+					<input type="text" required id="city" name="city" />
+				</div>
+				<div class="form-group">
+					<label for="email">Adresse mail</label>
+					<input type="email" required id="email" name="email" />
+				</div>
+				<div class="form-group">
+					<label for="tel">Numéro de mobile</label>
+					<input type="text" required id="tel" name="tel" />
+				</div>
+				<div class="form-flex">
+						<label for="optin" class="optin"><input type="checkbox" id="optin" />En cochant cette case, j’accepte de recevoir les offres de Réside Études*<span class="check">&nbsp;</span></label>
+					<p>Champs obligatoires*</p>
+				</div>
+				<input type="submit" class="disabled" id="submit" name="submit" value="Je dépose mon dossier" />
 
 			</form>
 		</div>
@@ -338,30 +367,36 @@
 
 	<footer>
 		<div class="notes">
-			
+
 			<p class="accent"><span class="ancre" id="note1"></span>11% du montant investi (1) </p>
-			<p>Dans le cadre des dispositions de la loi de finances en vigueur. Cette économie d’impôts est applicable pour toute acquisition d’un logement neuf plafonnée à 300 000 € dans une résidence avec services éligible à ce statut.</p>
+			<p>Dans le cadre des dispositions de la loi de finances en vigueur. Cette économie d’impôts est applicable
+				pour toute acquisition d’un logement neuf plafonnée à 300 000 € dans une résidence avec services
+				éligible à ce statut.</p>
 
 			<p class="accent"><span class="ancre" id="note2"></span>Vos loyers sont garantis nets de charges (2)</p>
-			<p>Revenus nets de charges d’entretien, selon les conditions du bail commercial, hors impôts fonciers et taxes d’ordures ménagères.</p>
+			<p>Revenus nets de charges d’entretien, selon les conditions du bail commercial, hors impôts fonciers et
+				taxes d’ordures ménagères.</p>
 
 			<p class="accent"><span class="ancre" id="note3"></span>Vos loyers sont garantis nets d’impôts (3) </p>
-			<p>Revenus nets d'impôts à due proportion du montant des amortissements dans le cadre de la Location Meublée Non Professionnelle (LMNP).</p>
+			<p>Revenus nets d'impôts à due proportion du montant des amortissements dans le cadre de la Location Meublée
+				Non Professionnelle (LMNP).</p>
 
-			<p class="accent"><span class="ancre" id="note4"></span>4% (4)</p>Dans le cadre de la Location Meublée Non Professionnelle (LMNP), selon les conditions du bail commercial.<br>
+			<p class="accent"><span class="ancre" id="note4"></span>4% (4)</p>Dans le cadre de la Location Meublée Non
+			Professionnelle (LMNP), selon les conditions du bail commercial.<br>
 			Taux proposé sur certaines résidences selon les stocks disponibles.<p>
 
 		</div>
 		<div class="colophon">
 			<div class="infos">
-				<p class="adresse"><span class="large">Siège social : </span><strong>42, Avenue George V - 75008 Paris</strong></p>
+				<p class="adresse"><span class="large">Siège social : </span><strong>42, Avenue George V - 75008
+						Paris</strong></p>
 				<p class="numero">RCS PARIS 350 902 102</p>
 				<p class="numero">CNIL 1521984 v 0</p>
 				<p class="numero">CPI 7501 2016 000 014 130</p>
 				<p class="numero">ORIAS 15005641</p>
 			</div>
 			<div class="logo">
-				<img src="images/icone_reside_etudes.png" alt="icone Réside Etudes"/>
+				<img src="images/icone_reside_etudes.png" alt="icone Réside Etudes" />
 				<span class="accent">Groupe Réside Études ©</span>
 				<button class="btn3 large">
 					<span class="large">Nous contacter</span>
@@ -373,7 +408,7 @@
 				<a href="https://www.groupe-reside-etudes.com/gestion-des-cookies">Données personnelles</a>
 			</div>
 		</div>
-		
+
 		<script type="text/javascript" src="./assets/js/jquery.js"></script>
 		<script type="text/javascript" src="./inc/modaal/js/modaal.min.js"></script>
 		<script type="text/javascript" src="./assets/js/scripts.js"></script>
