@@ -570,3 +570,10 @@ border-radius: 20px;
 	margin-right:0;
 }
 }
+
+/*section #croissance */
+/* idem section #pourquoi sauf image à droite en mobile*/
+.pourquoi.croissance {
+	padding-left:0;
+	text-align: left;
+}
