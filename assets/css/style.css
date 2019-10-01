@@ -195,7 +195,7 @@ section {
 		padding:0 calc(50vw - 470px);
 	}
 	.notes, .colophon {
-		padding:10rem calc(50vw - 470px);
+		padding:10rem calc(50vw - 470px) 6rem;
 	}
 }
 
@@ -595,6 +595,7 @@ border-radius: 20px;
 .decor.decor-2 {
 	background-image: url('decor-2-mobile.png');
 		background-size:100% 600px;
+	top:-140px;
 }
 .residences {
 	position: relative;
@@ -664,7 +665,7 @@ background-color: #ffffff;
 	.decor.decor-2 {
 		background-image:url('decor-1-large.png');
 		background-size:100% 620px;
-	  top:-120px;
+	  top:-220px;
 	}
 
 	.residences {
@@ -732,4 +733,82 @@ background-color: #ffffff;
 .notes .ancre {
 	position:relative;
 	top:-90px;
+}
+
+.colophon {
+	text-align: center;
+}
+.colophon .infos {
+	margin-bottom:6rem;
+	
+}
+.colophon .logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom:6rem;
+}
+.colophon .numero {
+	margin-bottom: 0;
+}
+.colophon .logo img {
+	margin-bottom:2rem;
+	max-width:86px;
+}
+.colophon .logo .accent {
+	font-size:3rem;
+	font-weight:300;
+}
+
+.colophon a {
+	color:#fff;
+	display:block;
+	margin-bottom:4rem;
+}
+.colophon a:hover, .colophon a:focus {
+	color:#ff9400;
+}
+
+@media screen and (min-width:768px) {
+	.colophon {
+		display: flex;
+		flex-direction: column;
+		font-size:2rem;
+		text-align: left;
+	}
+	.colophon .logo {
+		order:0;
+		flex-direction:row;
+		flex-wrap:wrap;
+	}
+	.colophon .logo img {
+		margin-right:1.7rem;
+	}
+	.colophon .logo .accent {
+		flex-grow:1;
+	}
+	.colophon .infos {
+		order:1;
+	}
+	.colophon .adresse strong {
+		font-weight:normal;
+		margin-left:0.5rem;
+	}
+	.colophon .numero {
+		display:inline-block;
+	}
+	.colophon .numero:not(:last-of-type) {
+		border-right:2px solid #fff;
+		line-height: 1;
+		padding-right:2rem;
+		margin-right:2rem;
+		
+	}
+	.colophon .liens {
+		order:2;
+	}
+	.colophon .liens a {
+		display: inline-block;
+		margin-right:4rem;
+	}
 }
