@@ -25,7 +25,7 @@ html {
 	font-size:45%;
 }
 body {
-	background-color:#F7FCFF;
+	background-color: #f6fbff;;
 	font-family: 'Roboto', sans-serif;
 	color: #202020;
 	font-size:24px;
@@ -139,7 +139,7 @@ footer a {
 }
 h1.titre {
 	margin-bottom:2rem;
-	margin-top:10rem;
+	margin-top:0;
 }
 
 p {
@@ -192,7 +192,7 @@ section {
 	}
 }
 
-/* Header */
+/* Header et section #investir*/
 header.sticky {
 	background-color:#fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
@@ -201,7 +201,7 @@ header.sticky {
 	z-index:1;
 }
 header.absolute {
-	background-color:#F7FCFF;
+	background-color:#f6fbff;	
 	position:absolute;
 	top:0;
 	z-index:2;
@@ -215,11 +215,13 @@ header .logo {
 header .inner {
 	align-items: center;
 	display:flex;
+
 	flex-wrap:wrap;
-	justify-content:center;
+justify-content: center;
 	padding:10px 20px;
 }
 header p {
+	flex-basis:100%;
 	font-size:14px;
 	line-height:1;
   text-align: center;
@@ -236,29 +238,43 @@ header button {
 		text-align: center;
 
 }
+#investir {
+	padding-top:80px;
+}
+
+
 @media screen and (min-width:450px) {
 	header.absolute {
 		min-height:50px;
 	}
 	
-	#investir {
-		margin-top:40px
-	}
+	
 	
 	header p {
+		flex-basis:unset;
 	 margin-bottom:0;
 	padding-right:20px;
 		text-align: left;
 		
 		
 	}
+	
+	#investir {
+	padding-top:120px;
+}
+
 }
 @media screen and (min-width:768px) {
 	header .logo {
 		margin-top:0;
 	}
+
 	#investir {
+		background-image:url('BACKGROUND.png');
+		background-repeat: no-repeat;
+		background-size:100%;
 		margin-top:0;
+		min-height:44vw;
 	}
 	header p {
 		font-size:16px;
@@ -267,6 +283,7 @@ header button {
 		height:36px;
 	}
 	header.absolute {
+		background-color:#eff6fc;
 		min-height:80px;
 	}
 	header.absolute .inner {
@@ -287,14 +304,8 @@ header button {
 		padding: 10px  calc(50vw - 540px);
 	}
 }
-/* Section #investir */
-#investir .logo {
-	position:relative;
-	margin:10px auto 50px;
-	max-width:260px;
-	display: block;
-	padding-bottom: 30px;
-}
+
+
 
 /* Section atouts*/
 ul.atouts {
