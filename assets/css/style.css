@@ -48,6 +48,7 @@ h1, h2, h3 {
 .titre, .stitre {
 	color: #252525;
 	text-align:center;
+	position:relative;
 }
 
 .accent  {
@@ -138,6 +139,9 @@ footer a {
 main {
 	position:relative;
 }
+section {
+	position:relative;
+}
 .titre {
 	margin-bottom:3rem;
 	margin-top:13rem;
@@ -153,7 +157,7 @@ p {
 }
 
 section {
-	padding: 0 10%;
+	padding: 0 10px;
 }
 .notes, .colophon {
 	padding:10rem 10%;
@@ -372,22 +376,38 @@ ul.atouts  h3 {
 }
 
 /* section #pourquoi */
+
+.illustration-pourquoi {
+	max-width:200px;
+	width:53%;
+	position:absolute;
+	bottom:-20px;
+	left:0;
+}
+.illustration-pourquoi.large {
+	max-width:430px;
+	width:32%;
+	bottom:-180px;
+	left:unset;
+	right:0;
+}
 ul.pourquoi {
 	list-style: none;
 	margin:0;
 	padding:10px;
-	padding-left:30%;
+	padding-left:40%;
+	position: relative;
 	text-align: right;
 }
 .pourquoi li {
-	margin:0 0 6.4rem;
+	margin:0 0 3rem;
 	padding:0;
 	
 }
 .pourquoi h3 {
 	font-size:4rem;
 	line-height:1;
-	margin:0 0 1.6rem;
+	margin:0 0 0.6rem;
 }
 @media screen and (min-width:768px) {
 	ul.pourquoi {
@@ -395,7 +415,7 @@ ul.pourquoi {
 		flex-wrap:wrap;
 		justify-content: space-between;
 		padding:0;
-		padding-right:20%;
+		padding-right:30%;
 		text-align:left;
 	}
 	.pourquoi  li {
@@ -412,9 +432,7 @@ ul.pourquoi {
 }
 
 /*section #avantages*/
-section {
-	position:relative;
-}
+
 .decor {
 	background-image:url('decor-1-mobile.png');
 	background-repeat:no-repeat;
@@ -468,7 +486,7 @@ section {
 @media screen and (min-width:768px) {
 	.decor {
 		background-image:url('decor-1-large.png');
-		top:-20px;
+		top:-70px;
 		background-size:auto;
 	}
 	.avantages {
