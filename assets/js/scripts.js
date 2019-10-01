@@ -3,11 +3,15 @@ jQuery(function ($) {
 		$('button').modaal({
 			accessible_title: 'Je dépose mon dossier',
 			content_source:'#formulaire',
-			close_text:'Fermer',
-			close_aria_label:'Fermer (appuyer sur ESC pour fermer)',
+			hide_close:true,
 			overlay_opacity : 0.8,
 			background: '#000',
 			width:695,
+		});
+
+		$('a.close').click(function (e) { 
+			e.preventDefault();
+			$('button').modaal('close');
 		});
 
 		var validate_form = 1;
@@ -18,7 +22,6 @@ jQuery(function ($) {
 		var tel = jQuery('#tel');
 		var pcode = jQuery('#pcode');
 		var city = jQuery('#city');
-		var landing = jQuery('#landing');
 		var optin = jQuery('#optin');
 		var submit = jQuery('#submit');
 
