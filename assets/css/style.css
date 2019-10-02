@@ -89,12 +89,13 @@ button {
 	font-family: 'Baloo';
 	font-size:2.4rem;
 	height:6rem;
-	margin:2rem 0;
+	margin:2rem auto;
 	padding:0 3rem;
 	position: relative;
 	text-align:center;
 	transition: all ease-in-out 0.7s;
 	width:100%;
+	max-width: 300px;
 }
 
 button:hover, button:focus, button.btn2 {
@@ -189,6 +190,8 @@ section {
 		left:0;
 	}
 	button {
+		margin-left:0;
+		margin-right:0;
 		width:auto;
 		text-align: left;
 	}
@@ -364,6 +367,14 @@ ul.atouts  h3 {
 	margin-bottom:2rem;
 	padding-left:4.2rem;
 }
+@media screen and (min-width:500px) {
+	ul.atouts {
+		margin-left:auto;
+		margin-right:auto;
+		max-width:350px;
+		
+	}
+}
 
 @media screen and (min-width:768px) {
 	ul.atouts {
@@ -372,6 +383,9 @@ ul.atouts  h3 {
 		flex-wrap:wrap;
 		justify-content: space-between;
 		padding:0;
+		margin-left:unset;
+		margin-right:unset;
+		max-width:unset;
 	}
 	.atouts  li {
 		background-position-y: 3.2rem;
@@ -626,7 +640,7 @@ border-radius: 20px;
 /*section #croissance */
 /* idem section #pourquoi sauf image à droite en mobile*/
 .pourquoi.croissance {
-	padding-left:0;
+	padding-left:10%;
 	text-align: left;
 	position:relative;
 }
@@ -644,8 +658,13 @@ border-radius: 20px;
 	max-width:445px;
 	width:33%;
 	position:absolute;
-	bottom:-30px;
+	bottom:-55px;
 	right:0;
+}
+@media screen and (min-width:768px) {
+	.pourquoi.croissance {
+	padding-left:0;
+}
 }
 /*section #residences */
 .decor.decor-2 {
@@ -723,7 +742,7 @@ background-color: #ffffff;
 	.decor.decor-2 {
 		background-image:url('decor-1-large.png');
 		background-size:100% 620px;
-	  top:-220px;
+	  top:-190px;
 	}
 
 	.residences {
