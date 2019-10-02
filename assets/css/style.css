@@ -157,6 +157,10 @@ footer a {
 }
 
 /*Layout & spacing*/
+*, *::before, *::after {
+	box-sizing: border-box;
+	}
+
 main {
 	position: relative;
 }
@@ -182,6 +186,10 @@ p {
 
 section {
 	padding: 0 10px;
+}
+
+img {
+	max-width: 100%;
 }
 
 .notes,
@@ -385,9 +393,8 @@ header button {
 
 	#investir {
 		background-position-y: -100px;
-		min-height: 42vw;
-		margin-bottom: -130px;
-
+		min-height: 47vw;
+		margin-bottom: -50px;
 	}
 }
 
@@ -441,7 +448,6 @@ ul.atouts h3 {
 
 	.atouts li {
 		background-position-y: 3.2rem;
-		box-sizing: border-box;
 		border-top: 2px dotted #b4b4b4;
 		flex-basis: calc(50% - 1.5rem);
 		flex-grow: 0;
@@ -514,7 +520,6 @@ ul.pourquoi {
 	}
 
 	.pourquoi li {
-		box-sizing: border-box;
 		flex-basis: calc(50% - 1.5rem);
 		flex-grow: 0;
 	}
@@ -549,7 +554,7 @@ ul.pourquoi {
 
 .avantages {
 	display: flex;
-	overflow: visible;
+	overflow: scroll;
 	position: relative;
 }
 
@@ -591,29 +596,30 @@ ul.pourquoi {
 	.decor {
 		background-image: url('decor-1-large.png');
 		top: -70px;
-		background-size: auto;
+		background-size: 100% 600px;
 	}
 
 	.avantages {
 		flex-wrap: wrap;
 		max-width: 100%;
+		overflow:unset;
 
 	}
 
 	.avantage {
 		align-items: center;
 		display: flex;
-		flex-basis: 95%;
+		flex-basis: 100%;
 		margin-bottom: 3rem;
 		margin-right: 0;
-		max-width: 100%;
 		padding: 4rem;
 		text-align: left;
 	}
 
 	.avantage .icone {
+		flex:0 0 100px;
 		height: unset;
-		max-width: 105px;
+		max-width: 100px;
 		margin-right: 3.5rem;
 	}
 
@@ -627,16 +633,13 @@ ul.pourquoi {
 	}
 
 	.avantage p {
-		box-sizing: border-box;
 		font-size: 1.9rem;
 	}
 
 	.avantage p:first-of-type {
 		border-bottom: none;
 		border-right: 3px dotted #c1c1c1;
-		flex-basis: 50%;
-		flex-shrink: 0;
-
+		flex:0 0 42%;
 		padding-bottom: 0;
 		margin-bottom: 0;
 		padding-right: 4.5rem;
@@ -649,11 +652,7 @@ ul.pourquoi {
 	}
 }
 
-@media screen and (min-width:1000px) {
-	.avantage p:first-of-type {
-		flex-basis: 300px;
-	}
-}
+
 
 /*section #accompagne*/
 
@@ -668,8 +667,6 @@ ul.accompagne {
 }
 
 .accompagne li {
-	box-sizing: border-box;
-
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
 	border-radius: 20px;
 	flex: 45% 0 0;
@@ -819,16 +816,12 @@ ul.accompagne {
 }
 
 .residence .icone {
-	box-sizing: border-box;
 	flex-basis: 50px;
 	flex-shrink: 0;
 	flex-grow: 0;
 	margin-right: 20px;
 }
 
-.residence .icone img {
-	max-width: 100%;
-}
 
 .residence .logos {
 	display: flex;
@@ -838,7 +831,13 @@ ul.accompagne {
 	padding: 0 3rem 2rem;
 }
 
-.residence .logos img:not(:last-of-type) {
+.residence .logos img {
+	width: 100%;
+	height: 100%;
+	min-width: 0;
+}
+
+.residence .logos div:not(:last-of-type) {
 	margin-right: 3rem;
 }
 
@@ -857,7 +856,6 @@ ul.accompagne {
 	}
 
 	.residence {
-		box-sizing: border-box;
 		flex-basis: 290px;
 		max-width: 290px;
 		flex-grow: 0;
@@ -898,7 +896,7 @@ ul.accompagne {
 	border-radius: 0 0 30px 30px;
 	background-color: #F7FCFF;
 	position: absolute;
-	bottom: -30px;
+	bottom: -29px;
 	height: 30px;
 	width: 100vw;
 	left: 0;
