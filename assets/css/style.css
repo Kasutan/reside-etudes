@@ -902,7 +902,7 @@ ul.accompagne {
 	position: absolute;
 	bottom: -29px;
 	height: 30px;
-	width: 100vw;
+	width: 100%;
 	left: 0;
 	right: 0;
 }
