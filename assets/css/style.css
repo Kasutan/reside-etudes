@@ -188,13 +188,13 @@ section {
 	padding: 0 10px;
 }
 
-img {
-	max-width: 100%;
-}
-
 .notes,
 .colophon {
-	padding: 10rem 10%;
+	padding: 10rem 10px;
+}
+
+img {
+	max-width: 100%;
 }
 
 .large {
@@ -204,6 +204,10 @@ img {
 @media screen and (min-width:450px) {
 	section {
 		padding: 0 10%;
+	}
+	.notes,
+	.colophon {
+		padding: 10rem 10%;
 	}
 }
 
@@ -310,7 +314,7 @@ header button {
 
 #investir {
 	background-color: #fff;
-	min-height: calc(100px + 93vw);
+	min-height: calc(200px + 93vw);
 	padding-top: 80px;
 }
 
@@ -1086,21 +1090,18 @@ a.close {
 }
 
 .form-group input {
+	background-color:transparent;
 	border-radius: 20px;
 	border: solid 1px lightgrey;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-	height: 41px;
-
-
-
 	color: #252525;
-
 	font-size: 14px;
 	font-weight: 700;
+	height: 41px;
 	line-height: 1;
-	text-align: center;
-	padding-top: 14px;
 	margin-bottom: 14px;
+	padding-top: 14px;
+	text-align: center;
 }
 
 .form-group label {
